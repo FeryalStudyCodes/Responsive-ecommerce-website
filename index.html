@@ -1,20 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce website</title>
-  </head>
-  <body>
-    <header id="header-section"></header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script>
+    window.console = window.console || function (t) {};
+  </script>
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+<body>
+  <header id="header-section">
+    <div class="country-info">
+
+    </div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="overlay"></div>
+    <nav>
+      <div class="close"><i class="fas fa-times"></i></div>
+      <div class="logo">
+        <img src="img/adidas.png" alt="shop logo">
+      </div>
+
+      <div class="nav-middle">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sections</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-end">
+        <ul>
+          <!-- <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li> -->
+          <li><a href="#"><i class="fas fa-search"></i></a></li>
+          <li><a href="#"><i class="fas fa-user"></i></a></li>
+          <li id="country">
+            <select class="vodiapicker">
+              <option value="en" class="test"
+                data-thumbnail="https://cdn.countryflags.com/thumbs/yemen/flag-round-250.png">
+                Yemen</option>
+              <option value="au" data-thumbnail="https://cdn.countryflags.com/thumbs/oman/flag-button-round-250.png">
+                Oman</option>
+              <option value="uk" data-thumbnail="https://cdn.countryflags.com/thumbs/egypt/flag-button-round-250.png">
+                Egypt
+              </option>
+              <option value="cn" data-thumbnail="https://cdn.countryflags.com/thumbs/syria/flag-round-250.png">
+                Syria</option>
+              <option value="de"
+                data-thumbnail="https://i.pinimg.com/originals/4a/69/78/4a69787db8db062da229a92bbb181886.png">
+                KSA</option>
+              <option value="dk"
+                data-thumbnail="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png">
+                USA</option>
+            </select>
+
+            <div class="lang-select">
+              <button class="btn-select" value=""></button>
+              <div class="b">
+                <ul id="a"></ul>
+              </div>
+            </div>
+          </li>
+          <li id="city"><select name="city" id="sub_menu" class="custom-select">
+              <option>Select city</option>
+            </select></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="tone-1">
+        <div class="product-info">
+          <h1>YEEZY BOOST 350 V2</h1>
+          <p>New and improved</p>
+          <h2>$230</h2>
+          <div class="info-btns">
+            <a href="#" class="btn discover-btns">DISCOCER</a>
+            <a href="#" class="btn cart-btns">ADD TO CART</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tone-2">
+        <img src="img/shoe1.png" alt=" shoe">
+      </div>
+  </header>
+  <section>
+
+  </section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <footer></footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/render.js"></script>
+</body>
+
 </html>

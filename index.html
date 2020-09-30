@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-commerce website</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -85,35 +87,131 @@
     </nav>
 
     <div class="main">
-      <div class="tone-1">
-        <div class="product-info">
-          <h1>YEEZY BOOST 350 V2</h1>
-          <p>New and improved</p>
-          <h2>$230</h2>
-          <div class="info-btns">
-            <a href="#" class="btn discover-btns">DISCOCER</a>
-            <a href="#" class="btn cart-btns">ADD TO CART</a>
+      <div class="wrapper">
+        <div class="content">
+          <div class="overlay-slider"></div>
+          <div class="product-img">
+            <div class="product-img__item" id="img1">
+              <img src="img/shoe1.png" alt="star wars" class="product-img__img">
+            </div>
+            <div class="product-img__item" id="img2">
+              <img src="img/shoe1.png" alt="star wars" class="product-img__img">
+            </div>
+            <div class="product-img__item" id="img3">
+              <img src="img/shoe1.png" alt="star wars" class="product-img__img">
+            </div>
+            <div class="product-img__item" id="img4">
+              <img src="img/shoe1.png" alt="star wars" class="product-img__img">
+            </div>
+          </div>    
+          <div class="swiper-container product-slider">
+            <button class="prev disabled">
+              <span class="icon">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <path d="M492,236H68.442l70.164-69.824c7.829-7.792,7.859-20.455,0.067-28.284c-7.792-7.83-20.456-7.859-28.285-0.068
+                    l-104.504,104c-0.007,0.006-0.012,0.013-0.018,0.019c-7.809,7.792-7.834,20.496-0.002,28.314c0.007,0.006,0.012,0.013,0.018,0.019
+                    l104.504,104c7.828,7.79,20.492,7.763,28.285-0.068c7.792-7.829,7.762-20.492-0.067-28.284L68.442,276H492
+                    c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"></path>
+              </svg>
+              </span>
+            </button>
+            <button class="next">
+              <span class="icon">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+                    c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+                    l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+                    c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"></path>
+              </svg>
+              </span>
+            </button>
+            <div class="product-slider__wrp swiper-wrapper">
+              <div class="product-slider__item swiper-slide" data-target="img4">
+                <div class="product-slider__card">
+                  <div class="product-slider__content">
+                    <h1 class="product-slider__title">
+                      YEEZY BOOST 350 V2
+                    </h1>
+                    <span class="product-slider__price">$1.299,<sup>99</sup></span>
+                    
+                    
+                    <div class="product-slider__bottom">
+                      <button class="btn product-slider__cart cart-btns">
+                        ADD TO CART
+                      </button>
+                      <button class="btn discover-btns product-slider__fav js-fav"><span class="heart"></span>DISCOCER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider__item swiper-slide" data-target="img1">
+                <div class="product-slider__card">
+                  <div class="product-slider__content">
+                    <h1 class="product-slider__title">
+                      IMPERIAL  ARMY’S <br> TIE FIGHTER
+                    </h1>
+                    <span class="product-slider__price">$9.999,<sup>99</sup></span>
+      
+                    <div class="product-slider__bottom">
+                      <button class="btn product-slider__cart cart-btns">
+                        ADD TO CART
+                      </button>
+      
+                      <button class="btn discover-btns product-slider__fav js-fav"><span class="heart"></span>DISCOCER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider__item swiper-slide" data-target="img2">
+                <div class="product-slider__card">
+                  <div class="product-slider__content">
+                    <h1 class="product-slider__title">
+                      KYLO REN'S <br> LIGHTSABER
+                    </h1>
+                    <span class="product-slider__price">$1.699,<sup>99</sup></span>
+                    
+      
+                    <div class="product-slider__bottom">
+                      <button class="btn product-slider__cart cart-btns">
+                        ADD TO CART
+                      </button>
+      
+                      <button class="btn discover-btns product-slider__fav js-fav"><span class="heart"></span>DISCOCER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-slider__item swiper-slide" data-target="img3">
+                <div class="product-slider__card">
+                  <div class="product-slider__content">
+                    <h1 class="product-slider__title">
+                      IMPERIAL ARMY'S <br>
+                      DEATH STAR
+                    </h1>
+                    <span class="product-slider__price">$9.999,<sup>99</sup></span>
+                    
+      
+                    <div class="product-slider__bottom">
+                      <button class="btn product-slider__cart cart-btns">
+                        ADD TO CART
+                      </button>
+      
+                      <button class="btn discover-btns product-slider__fav js-fav"><span class="heart"></span>DISCOCER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="tone-2">
-        <img src="img/shoe1.png" alt=" shoe">
       </div>
   </header>
   <section>
 
   </section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <footer></footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/render.js"></script>
 </body>
 

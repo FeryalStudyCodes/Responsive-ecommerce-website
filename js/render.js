@@ -83,7 +83,6 @@ var swiper = new Swiper('.product-slider', {
 });
 
 
-//  물품이미지 스와이프   
 swiper.on('slideChange', function () {
     var index = this.activeIndex;
 
